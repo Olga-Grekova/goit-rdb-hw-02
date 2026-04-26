@@ -40,7 +40,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Orders` (
   `order_id` INT NOT NULL,
-  `order_date` VARCHAR(45) NULL,
+  `order_date` DATETIME NULL,
   `customer_id` INT NULL,
   PRIMARY KEY (`order_id`),
   INDEX `customer_order_idx` (`customer_id` ASC) VISIBLE,
